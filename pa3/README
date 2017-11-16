@@ -1,0 +1,78 @@
+/*
+ * Filename: README
+ * Author:   Xiaolong Zhou
+ * Userid:   cs30xaeo
+ * Date:     May 17, 2016
+ * Source of Help: write up
+ */
+
+/************ Description ************/
+  This program is designed to find an anagram from a dictionary base on the 
+term entered by user. Which mean program will find all the term that use
+the term entered by user to reorganize, no matter upper case or lower case.
+In order to run the program, user are required to enter flags in order to let
+program know what to do. "-f" flag requires a .af file after it. "-b" flag
+requires a number between 1-32(included) after it. User can enter "-h" for 
+help information. After successfully run the program, user can enter a term
+to find anagram. If user want to know how many collisions that this term has,
+user can enter "-b" when they run the program. It will shows you how many
+collisions after user enter a term. User can keep enter words to find anagrams.
+To terminate program, just simply press control + D to exit program.
+
+/************ How to compile ************/
+  In order to compile this program, first we have to go to pa3 directory.
+Then we have to make sure that all needed source files are in this directory.
+Since Makefile is provided in this directory, we could just simply type
+command "make" in your current working terminal to compile the program.
+Because Makefile contains command to compile all source file.
+
+
+/************ How to Run ************/
+  After you compiled your program, there will be an pa3 executeable file in 
+pa3 directory. In order to run the program, just type "./pa3" with flags in
+current working terminal to run the program. After this, just type a term 
+that you want to find its anagram. Example: ./pa3 -f dictionary -c.
+Then enter a word.
+
+
+/************ Example of Normal Output ************/
+
+[cs30xaeo@ieng9]:pa3:505$ ./pa3 -f dictionary.af -b 11 -c
+
+Enter a word to search for anagrams [^D to exit]: name 
+Anagram(s) are: amen mane mean name
+Number of collisions: 12
+
+Enter a word to search for anagrams [^D to exit]: 
+
+The output will go to stdout.
+
+/************ Example of Abnormal Output ************/
+
+[cs30xaeo@ieng9]:pa3:504$ ./pa3 -b 88
+
+        Number of hash bits must be within the range of [1 - 32].
+
+Usage: ./pa3 -f anagramsFile [-b hashBits] [-c] | [-h]
+Try './pa3 -h' for more information.
+
+The output will go to stderr.
+
+/************ How to Test Program ************/
+  In order to test program correctly, we have to compare the result from my
+program and the result from tester to see if there is any differences. To
+make sure that our program works correctly, we have to test some edges cases,
+such ad didn't enter a file name after a flag -f, or file is invalid, or
+didn't enter a number between 1-32 after flag -b...etc. All of these will
+result errors, and will print error messages.
+
+/************ Questions ************/
+1. How do you maintain your integrity even when you're stressed, pressured
+or tired?
+
+  I understand it is easy to get stressed, fretful when PA is hard, even
+though, we still have to maintain our integrity. We need to abreact our mood
+sometimes by not hurting other people. The best way to maintain integrity is
+to find a seat at lab, then queue a tutor describe what problem that you have.
+In the meantime, you could discuss with your classmate about some problems,
+but dont't share code each other.

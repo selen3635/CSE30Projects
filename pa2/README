@@ -1,0 +1,110 @@
+I:/*
+ * Filename: README
+ * Author:   Xiaolong Zhou
+ * Userid:   cs30xaeo
+ * Date:     May 1, 2016
+ */
+
+/************ Description ************/
+  This program is designed for encrypt data that entered from user. It requires
+user to enter 4 inputs after program executed. Which means user have entered
+four information in order to run program. First of four, user have to enter at
+least 8 characters. It could be any characters, letters, numbers even symbols.
+The second and thrid one is that user have enter two integers. It it is not
+integer or too larger integer, which will result in errors. The fourth one is
+that user have to enter a number between -63 to 63 inclusively. After user 
+entered these four infomation. Program will ask user to enter a message to 
+encrypt. Now user can enter any message that he/she wants to encrypt. Then hit
+ENTER key, after this press CONTROL button follow with D button. On the 
+termianl will show the encrypted message base on user entered.
+
+
+/************ How to compile ************/
+  In order to compile this program, first we have to go to pa2 directory.
+Then we have to make sure that all needed source files are in this directory.
+Since Makefile is provided in this directory, we could just simply type 
+command "make" in your current working terminal to compile the program.
+Because Makefile contains command to compile all source file.
+
+
+/************ How to Run ************/
+  After you compiled your program, there will be an pa2 executeable file in
+pa2 directory. In order to run the program, just type "./pa2" with four
+more arguments(specified in description) in current working terminal. After
+this, just type a message to encrypt. Example:./pa2 cse30rocks 12 12 4,
+then enter a message.
+
+/************ Example of Normal Output ************/
+
+[cs30xaeo@ieng9]:pa2:503$ ./pa2 cse30rocks 12 12 4
+Hello world!
+?RZ??'Q?D5
+
+The output will go to stdout.
+
+/************Example of Abnormal Output ************/
+eo@ieng9]:pa2:506$ ./pa2
+
+Usage: ./pa2 passphrase key0 key1 rotateValue
+    passphrase   (must be at least eight characters long)
+    key0         (must be numeric; decimal, octal, or hexadecimal)
+    key1         (must be numeric; decimal, octal, or hexadecimal)
+    rotateValue  (must be a decimal value within the range [-63 - +63])
+
+The output will go to stderr.
+
+/************ How to Test Program ************/
+  In order to test program correctly, we have to compare the result from my
+program and the result from tester to see if there is any diffirence. To make
+sure that our program works correctly, we have to test some edge cases. Such
+as didn't enter anything when we run the pa2 executeable file. Or enter a 
+non integer as second or third input. Or enter a too larger number. Or enter
+a number not in range ( -63 to 63) for fourth input. These will result errors,
+and will print error messages.
+
+/************ Questions ************/
+1. use mv command
+   mv [oldfilename] [newfilename]
+
+2  use cp command
+   cp /path/SOURCE /path/DESTINATION
+
+3. After you select the text, the selected text is hilight. If you middle
+click, it will be copied to where your cursor at.
+
+4. .vimrc is a file used customize vim.(Such as change them etc...)
+   Open a terminal,
+   In home directory, use any editor to open .vimrc. Such as "vim .vimrc".
+   After you open it, you can specify what you need base on what you like,
+   and edite it. Such as you can set line number so you can ses line number
+   for you when you use vim to open a file. (set nu)
+
+5. In command mode,
+   cut full line: dd
+   past: p
+
+6. In command mode(esc):
+   type "/string" to search for a string.
+
+7. In command mode:
+   type ":set nu" to turn on line number in vim.
+
+8. cd ~/fubar
+   Command cd(change directory) will bring you to the home directory no
+   matter what is your current directory. /fubar will bring you to fubar
+   directory which is in the home directory.
+
+9. Command "chmod" use to change permission on a file.
+   chmod with class, operator and access type.(example: chmod a rwx file).
+   claases:
+   u: user, g: group, o: other, a: all, which means u, g, and o.
+   operators: + - =
+   Access type: r: read, w: write, x: execute
+
+   To give read permission to group: chmod g + r file
+
+10. The reason why they are expected to act with integrity, is because first
+they are professional. Then they are the people who can create new stuffs,
+if they don't act with integrity, then there is no new/ amazing things
+come out.
+   

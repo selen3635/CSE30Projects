@@ -1,0 +1,109 @@
+/*
+ * Filename: README
+ * Author:   Xiaolong Zhou
+ * Userid:   cs30xaeo
+ * Date:     May 30, 2016
+ * Source of Help: Write up
+ */
+
+/------------------------ Description ---------------------/
+  This program is designed to list all files in alphabetically within a 
+directory. User are required to enter some flags to indicate the way to sort
+and list the files. For example, if user enter a flag -l, it will list all
+the files with long format. If user entera flag -a, it will list all files
+include hidden file. User can enter a flag -h, this will shows help
+information to tell user that which flags are available. Also, user can enter
+some flags follow with a directory, in this case, it will shows files in this
+directory. If user enter a flag -r, it will shows files with reverse order.
+
+/----------------------- How to Compile ---------------------/
+  In order to compile this program, first we have to go to pa4 directory.
+Then we have to make sure that all needed source files are in this directory.
+Since Makefiles is provided in this directory, we could just simply type
+command "make" in your current working terminal to compile the program.
+Because Makefile contains command to compile all source files.
+
+
+/----------------------- How to Run ----------------------/
+  After you compiled your program, there will be an myls executable file in
+pa4 directory. In order to run the program, just type "./myls" with flag or
+filename/directory in current working terminal to run the program. 
+Example: ./myls -l
+
+
+/------------------- Example of Normal Output ---------------/
+[cs30xaeo@ieng9]:pa4:504$ ./myls
+.:
+Makefile
+README
+buildFileInfoTable.c
+buildFileInfoTable.ln
+buildFileInfoTable.o
+core
+modTimeCompare.c
+modTimeCompare.ln
+modTimeCompare.o
+modTimeCompareRev.o
+modTimeCompareRev.s
+myDirtory
+myls
+nameCompare.o
+nameCompare.s
+nameCompareRev.c
+nameCompareRev.ln
+nameCompareRev.o
+pa4.c
+pa4.h
+pa4.ln
+pa4.o
+pa4Globals.c
+pa4Globals.ln
+pa4Globals.o
+pa4Strings.h
+parseArgs.c
+parseArgs.ln
+parseArgs.o
+printFileInfoTable.c
+printFileInfoTable.ln
+printFileInfoTable.o
+printGroupName.o
+printGroupName.s
+printOwnerName.c
+printOwnerName.ln
+printOwnerName.o
+printPermissions.c
+printPermissions.ln
+printPermissions.o
+test.h
+testbuildFileInfoTable.c
+testfile.c
+testmodTimeCompare.c
+testmodTimeCompareRev.c
+testnameCompare.c
+testparseArgs.c
+testprintPermisssions.c
+
+The output will go to stdout.
+
+
+/-------------------- Example of Abnormal Output -----------------/
+[cs30xaeo@ieng9]:pa4:506$ ./myls -g
+./myls: illegal option -- g
+Usage: ./myls [-ahlrtBF] [file ...]
+
+The output will go to stderr.
+
+
+/--------------------- How to test program -------------------/
+  In order to test program correctly, we have to compare the result from my
+program and the result from tester to see if there is any differences. To 
+make sure that our program works correctly, we have to test some edge cases,
+such that pass in a invalid flag, or a file/directory without permission...etc
+All of these will result errors, and will print error message.
+
+/------------------------ Question ----------------------/
+1. I would love to answer questions if my peers ask me questions that i know.
+  However i will not share my code with them, i will discuss question instead.
+  I will tell my peer if he/she try to solve the problem instead of just 
+  asking for answer will learn more things. So he/she is getting more 
+  experience on coding, and getting better and better.
