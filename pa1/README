@@ -1,0 +1,124 @@
+/*
+ * Filename: README
+ * Author:   Xiaolong Zhou
+ * Userid:   cs30xaeo
+ * Date:     April 16, 2016
+ */
+
+/********** Description **********/
+  This program is going to draw a character S on the terminal. It requires
+user to enter four digit number in order to run program. First number will
+be between 4 to 1000 inclusively. This number dicide the width of character
+S will be. The rest of three numbers all between 32 to 126 inclusively.
+Second number is a value of a character that will represent the 'S'.
+Third number is a value of a character that will fill in the empty space
+inside the border. Fourth number is a value of a character that will make
+up the rectangular border of the 'S'. Therefore, users are required to 
+enter exactly 4 numbers, and each number must be in valid range. If any of
+them are not satisfied, program will print error message on the terminal.
+For example, if user enter less or more than 4 numbers, it will shows a
+usage for user says that you have enter valid numbers. Also first number
+must be even, so if user enter odd number. It will shows user to enter a 
+even number. If user enter 4 numbers all within range, but third or fourth
+number is equal to second number. This also will result a error message,
+because third and fourth number must be different from second number.
+If user entered 4 number all valid, it will print a character S on the 
+terminal.
+
+
+/********** How to compile **********/
+  In order to compile this program, first we have to go to pa1 directory,
+also make sure that all needed source files are in this directory. Since
+this Makefile is provided and in this directory, Makefile contains command
+to compile all source file. So just simply type conmmand "make" in your
+current working terminal to compile the program.
+
+/********** How to Run **********/
+  After you compiled your program, there will be an a.out executable file
+in pa1 directory. Instead of run a.out, we just type "./pa1 with numbers".
+Since Makefile already include these. For example, you could type
+"./pa1 10 32 88 124" to run program.
+
+
+/********** Example of Normal Output **********/
+
+[cs30xaeo@ieng9]:pa1:516$ ./pa1 8 45 63 35
+##########
+#?------?#
+#-???????#
+#-???????#
+#-???????#
+#-???????#
+#-???????#
+#-???????#
+#?------?#
+#???????-#
+#???????-#
+#???????-#
+#???????-#
+#???????-#
+#???????-#
+#?------?#
+##########
+
+The output will shows on terminal.
+
+/********** Example of Abnormal Output **********/
+
+[cs30xaeo@ieng9]:pa1:517$ ./pa1 3 34 34 34
+
+        sWidth(3) must be within the range of [4 - 1000]
+
+	sWidth(3) must be even
+
+	sChar(34) and fillerChar(34) must be different
+
+	sChar(34) and borderChar(34) must be different
+
+The error message wil shows on the terminal.
+
+/********** How to Test Program **********/
+  In order to test program correctly, we have to compare the result from
+my program and the result from tester. To make sure that our program works
+correctly, we have to test some edge cases. Such as first number is not
+even(./pa1 5 50 70 80). Third or fourth number is equal to second number.
+(./pa1 6 40 40 40). Too many arguments(./pa1 2 40 40 40 40). Not enough
+arguments(./pa1 2 38 38). Not valid number/out of range(./pa1 6 28 28 28)
+Big numbers(./pa1 2000 300 300 300)...
+
+/********** Questions **********/
+1. Type "p/x $i0" to get a hexdecimal number which is 0xffbff207.
+   Then type "x/s 0xffbff207" to print out 1st arg in strtol.
+
+2. Type "p/x $i2" to get a hexdecimal number which is 0xa.
+   Then type "p/d 0xa" to print the value of the base which is 10.
+
+3. Type "p/x $i1" to print the hex value of &endptr which is 0xffbfeff4
+
+4. Since my variable name is sWidth, so
+   type "p sWidth" to print the value returned by strtol, which is 9.
+   Another ways is to type "p $o0" to print the value return by strtol,
+   which is 9.
+
+5. Type "p/c *endptr" to print the character endptr is pointing to ,
+   which is 'I'
+
+6. Type "p endptr" to print entire- nul-terminated string endptr is
+   pointing to, which is "InchNails".
+
+7. Type "p/d errno" to print decimal value of the global variable errno,
+   which is 0.
+
+8. git status
+
+9. git reset --hard
+
+10. git diff HEAD 
+
+11. To complete this assignment with integrity, i can't show my work with
+my classmates, also i can't look at someone else code. If i have any
+question with my program, i suppose to post my question on piazza, or i 
+can go to lab and ask tutors. Tutors are really good source to help me
+finish my assignment. Besides these, i also discuss some ideas with my
+friends, however we don't show code to each other. Therefore, this is
+how i finish my program with integrity.
