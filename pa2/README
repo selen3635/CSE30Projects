@@ -1,9 +1,4 @@
-I:/*
- * Filename: README
- * Author:   Xiaolong Zhou
- * Userid:   cs30xaeo
- * Date:     May 1, 2016
- */
+
 
 /************ Description ************/
   This program is designed for encrypt data that entered from user. It requires
