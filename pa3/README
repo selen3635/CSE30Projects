@@ -52,21 +52,4 @@ Try './pa3 -h' for more information.
 
 The output will go to stderr.
 
-/************ How to Test Program ************/
-  In order to test program correctly, we have to compare the result from my
-program and the result from tester to see if there is any differences. To
-make sure that our program works correctly, we have to test some edges cases,
-such ad didn't enter a file name after a flag -f, or file is invalid, or
-didn't enter a number between 1-32 after flag -b...etc. All of these will
-result errors, and will print error messages.
 
-/************ Questions ************/
-1. How do you maintain your integrity even when you're stressed, pressured
-or tired?
-
-  I understand it is easy to get stressed, fretful when PA is hard, even
-though, we still have to maintain our integrity. We need to abreact our mood
-sometimes by not hurting other people. The best way to maintain integrity is
-to find a seat at lab, then queue a tutor describe what problem that you have.
-In the meantime, you could discuss with your classmate about some problems,
-but dont't share code each other.
