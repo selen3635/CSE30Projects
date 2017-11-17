@@ -58,19 +58,6 @@ Since Makefile already include these. For example, you could type
 
 The output will shows on terminal.
 
-/********** Example of Abnormal Output **********/
-
-[cs30xaeo@ieng9]:pa1:517$ ./pa1 3 34 34 34
-
-        sWidth(3) must be within the range of [4 - 1000]
-
-	sWidth(3) must be even
-
-	sChar(34) and fillerChar(34) must be different
-
-	sChar(34) and borderChar(34) must be different
-
-The error message wil shows on the terminal.
 
 /********** How to Test Program **********/
   In order to test program correctly, we have to compare the result from
@@ -110,10 +97,3 @@ Big numbers(./pa1 2000 300 300 300)...
 
 10. git diff HEAD 
 
-11. To complete this assignment with integrity, i can't show my work with
-my classmates, also i can't look at someone else code. If i have any
-question with my program, i suppose to post my question on piazza, or i 
-can go to lab and ask tutors. Tutors are really good source to help me
-finish my assignment. Besides these, i also discuss some ideas with my
-friends, however we don't show code to each other. Therefore, this is
-how i finish my program with integrity.
